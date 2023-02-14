@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="/images/weather.png">
+    <title>Search Weather</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+</head>
+<body>
+    {{>header}}
+    <div class="main">
+        <p>Find current weather detail of any location you want!</p>
+        <form id="form">
+            <input id="search-text" type="text" placeholder="Enter Location">
+            <button id="search-button" type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <p id="result"></p>
+    </div>
+    {{>footer}}
+    <script src="/js/index.js"></script>
+</body>
+</html>
