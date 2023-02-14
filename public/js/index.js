@@ -10,7 +10,7 @@ btn.addEventListener('click', (e) => {
         result.style.color = 'red';
         btn.innerHTML = '<i class="fa fa-search"></i>';
     } else {
-        fetch(`http://localhost:3000/weather?address=${addr}`).then((response) => response.json().then((data) => {
+        fetch(`/weather?address=${addr}`).then((response) => response.json().then((data) => {
             if(data.error){
                 result.innerHTML = data.error;
                 result.style.color = 'red';
