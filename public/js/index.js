@@ -5,7 +5,6 @@ btn.addEventListener('click', (e) => {
     btn.innerHTML = '<i class="fa fa-refresh fa-spin"></i>';
     let addr = form.firstElementChild.value;
     let result = document.getElementById('result');
-    console.log(addr)
     if(addr.length <= 1){
         result.innerHTML = 'Please enter atleast 2 letters in the box above';
         result.style.color = 'red';
